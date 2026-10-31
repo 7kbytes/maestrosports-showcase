@@ -4,7 +4,7 @@
 
 **The website of an international football management company, connecting talent in Ghana and West Africa with opportunities in Dubai and the Middle East.**
 
-[Live site](https://maestrosportsmanagement.com) · [Demo video](https://github.com/7kbytes/maestrosports-showcase/releases/download/v1.0/maestro-demo.webm) · [How it works](#how-it-works) · [Contact](#contact)
+[Live site](https://maestrosportsmanagement.com) · [Demo video](https://github.com/7kbytes/maestrosports-showcase/releases/download/v1.0/maestro-demo.mp4) · [How it works](#how-it-works) · [Contact](#contact)
 
 ![Maestro Sports walkthrough](assets/walkthrough.gif)
 
