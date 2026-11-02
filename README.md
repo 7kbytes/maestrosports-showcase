@@ -1,8 +1,8 @@
 <div align="center">
 
-# Maestro Sports
+# Maestro Sports website
 
-**The website of an international football management company, connecting talent in Ghana and West Africa with opportunities in Dubai and the Middle East.**
+**A production website I designed, built and deployed for an international football management company in Dubai and Ghana.**
 
 [Live site](https://maestrosportsmanagement.com) · [Demo video](https://github.com/7kbytes/maestrosports-showcase/releases/download/v1.0/maestro-demo.mp4) · [How it works](#how-it-works) · [Contact](#contact)
 
@@ -10,24 +10,24 @@
 
 </div>
 
-> This is a product showcase. The source code is private, and nothing here is open for reuse. See [All Rights Reserved](#all-rights-reserved).
+> This is a portfolio showcase of my work. The source code is private, and nothing here is open for reuse. See [All Rights Reserved](#all-rights-reserved).
 
-## The problem
+## The brief
 
-Talented players in West Africa can struggle to reach clubs abroad. Scouting is often inconsistent, and players and families need clear support around trials and contracts. Clubs and sponsors, meanwhile, need a credible partner they can check before they get in touch.
+Maestro Sports scouts football talent in Ghana and West Africa and places it with clubs in the UAE and the Middle East. They needed a site that looks credible to clubs, sponsors and government partners, shows their real match photography, works well on phones, and turns visitors into enquiries.
 
-## The solution
+## What I built
 
-Maestro Sports works from Dubai, with scouting roots in Ghana and West Africa. Its website presents that work in one place and gives each audience a direct route to the team through a short enquiry form.
+A five-page marketing site (Home, Services, About, News, Contact) with a privacy page, built with Next.js and deployed to Vercel. Visitors send enquiries through a form that emails the Maestro team directly, with replies going straight back to the visitor.
 
-## Features
+## Engineering highlights
 
-| For athletes and families | For clubs and partners | Under the hood |
-| --- | --- | --- |
-| Coaching and player development services | Scouting and officiating services | Animated 3D hero and smooth scrolling |
-| Enquiry form with role selection | Corporate tournament services | Optimised images |
-| News and articles | Track record and regional presence | Search metadata and sitemap |
-| Mobile-friendly pages | Direct email contact | Optional, consent-based analytics |
+- **Page weight.** The site uses full-resolution match photography. I found the hero alone was shipping 4.9 MB, so I turned image optimisation back on and shrank the source images. Photos are now resized and re-encoded per device.
+- **A dependable contact pipeline.** Enquiries are validated on the server and sent by email from the company's own verified domain. The endpoint reports missing configuration and rejected emails clearly, rather than crashing or telling a visitor their message was sent when it was not.
+- **Mobile first.** I fixed headline clipping, text overflow and a long email address wrapping mid-word, each checked at phone width on the live site.
+- **Motion with restraint.** Animated hero, scroll reveals and gallery transitions with Framer Motion and GSAP.
+- **Lean dependencies.** I removed unused design-exploration components and their libraries, so the production build ships only what the pages use.
+- **Search ready.** Page metadata, Open Graph tags, a sitemap and robots rules.
 
 ## Screenshots
 
@@ -43,7 +43,7 @@ Maestro Sports works from Dubai, with scouting roots in Ghana and West Africa. I
 | --- | --- | --- | --- |
 | <img src="assets/shots/mobile-home.png" width="180" alt="Mobile home"> | <img src="assets/shots/mobile-services.png" width="180" alt="Mobile services"> | <img src="assets/shots/mobile-about.png" width="180" alt="Mobile about"> | <img src="assets/shots/mobile-contact.png" width="180" alt="Mobile contact"> |
 
-Captured from the live website on 31 October 2026, on desktop and at phone width.
+Captured from the live website, on desktop and at phone width.
 
 ## How it works
 
@@ -53,33 +53,21 @@ Captured from the live website on 31 October 2026, on desktop and at phone width
 
 | Area | Technology |
 | --- | --- |
-| Web | Next.js, React, TypeScript, Tailwind CSS |
-| 3D and motion | React Three Fiber, Three.js, GSAP, Framer Motion, Lenis |
-| Enquiry email | Resend |
-| Images | Cloudinary |
-| Analytics | Google Analytics, with consent |
-| Hosting | Vercel |
+| Framework | Next.js 15 (App Router), React 19, TypeScript |
+| Styling | Tailwind CSS 4, Google Fonts via next/font |
+| Motion | Framer Motion, GSAP |
+| Images | Next.js image optimisation, Cloudinary |
+| Email | Resend, from a verified company domain |
+| Hosting | Vercel, deployed from GitHub |
 
-## The market
+## My role
 
-Maestro Sports serves football players, academies, clubs, corporate sponsors and government partners. Its corridor runs from Ghana and West Africa to the UAE and the wider Middle East. Its services are coaching, player development, officiating, scouting and corporate tournaments.
-
-## Traction
-
-- The website is live at [maestrosportsmanagement.com](https://maestrosportsmanagement.com).
-- User and revenue numbers are not published yet.
-
-## Try it
-
-- **Live site:** [maestrosportsmanagement.com](https://maestrosportsmanagement.com)
-- **Android APK:** not applicable, as this is a website
-- **Pitch deck:** available on request by email
+I handled design, front-end development, the contact backend, email setup, deployment and ongoing fixes, working directly with the client.
 
 ## Contact
 
-- **Email:** [maestrosportsmanagementdxb@gmail.com](mailto:maestrosportsmanagementdxb@gmail.com)
 - **GitHub:** [@7kbytes](https://github.com/7kbytes)
 
 ## All Rights Reserved
 
-© 2026 7Kbytes. All Rights Reserved. Nothing in this repository may be copied, modified, distributed or reused without prior written permission. See [LICENSE](LICENSE).
+© 2026 7Kbytes. All Rights Reserved. Nothing in this repository may be copied, modified, distributed or reused without prior written permission. The Maestro Sports name, logo and photography belong to their owners and are shown with permission. See [LICENSE](LICENSE).
